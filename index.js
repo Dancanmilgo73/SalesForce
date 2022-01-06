@@ -4,7 +4,6 @@ const jsforce = require("jsforce");
 const conn = new jsforce.Connection({
 	// you can change loginUrl to connect to sandbox or prerelease env.
 	// loginUrl: "https://test.salesforce.com",
-	// securityToken: "C8ZM7jcnHASRqW3P13w5MoCNw",
 	/*   00D8d0000020VV2!ARoAQLg8nPq.W3.bdZ5Xi9wOitxZhpH98M0Gs4iZvQjAUos6NxtAHxpR9bGdlA9jYWeDR0Dz4rKCzLlicXkxa3aEhAK19uD6
 https://techcom-5a-dev-ed.my.salesforce.com
 User ID: 0058d000001113kAAA
@@ -79,10 +78,6 @@ fs.createReadStream(path.resolve(__dirname, "assets", "employee.csv"))
 				FirstName: row.FirstName,
 				LastName: row.LastName,
 				address: row.Address,
-				// properties from user
-				// isVerified: user.isVerified,
-				// hasLoggedIn: user.hasLoggedIn,
-				// age: user.age,
 			});
 		});
 	})
